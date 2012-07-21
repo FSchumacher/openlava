@@ -12,13 +12,13 @@
 \fBbjobs\fR [\fB-a\fR] [\fB-A\fR] [\fB-w\fR | \fB-l\fR] [\fB-J\fR \fIjob_name\fR] 
 [\fB-m\fR \fIhost_name\fR | \fB-m\fR \fIhost_group\fR] 
 [\fB-N\fR \fIhost_name | \fR\fB-N\fR \fIhost_model | \fR\fB-N \fR\fICPU_factor\fR] [\fB-P\fR\fI project_name\fR] 
-[\fB-q\fR \fIqueue_name\fR] [\fB-u \fR\fIuser_name\fR | \fB-u\fR \fIuser_group\fR | \fB-u all\fR]\fB \fR\fIjob_ID ...
-\fR.PP
+[\fB-q\fR \fIqueue_name\fR] [\fB-u \fR\fIuser_name\fR | \fB-u\fR \fIuser_group\fR | \fB-u all\fR]\fB \fR\fIjob_ID ...\fR
+.PP
 \fBbjobs\fR [\fB-d\fR] [\fB-p\fR] [\fB-r\fR] [\fB-s\fR] [\fB-A\fR] [\fB-w\fR | \fB-l\fR] [\fB-J\fR \fIjob_name\fR] 
 [\fB-m\fR \fIhost_name\fR | \fB-m\fR \fIhost_group\fR] 
 [\fB-N\fR \fIhost_name | \fR\fB-N\fR \fIhost_model | \fR\fB-N \fR\fICPU_factor\fR] [\fB-P\fR\fI project_name\fR] 
-[\fB-q\fR \fIqueue_name\fR] [\fB-u \fR\fIuser_name\fR | \fB-u\fR \fIuser_group\fR | \fB-u all\fR]\fB \fR\fIjob_ID ...
-\fR.PP
+[\fB-q\fR \fIqueue_name\fR] [\fB-u \fR\fIuser_name\fR | \fB-u\fR \fIuser_group\fR | \fB-u all\fR]\fB \fR\fIjob_ID ...\fR
+.PP
 \fBbjobs \fR[\fB-h\fR | \fB-V\fR]
 .SH DESCRIPTION
 .BR
@@ -731,25 +731,25 @@ Number of held jobs of the job array.
 .BR
 .PP
 .PP
-% \fBbjobs -pl
-\fR.PP
+% \fBbjobs -pl\fR
+.PP
 Displays detailed information about all pending jobs of the invoker. 
 .PP
-% \fBbjobs -ps
-\fR.PP
+% \fBbjobs -ps\fR
+.PP
 Display only pending and suspended jobs.
 .PP
-% \fBbjobs -u all -a
-\fR.PP
+% \fBbjobs -u all -a\fR
+.PP
 Displays all jobs of all users.
 .PP
-% \fBbjobs -d -q short -m apple -u john
-\fR.PP
+% \fBbjobs -d -q short -m apple -u john\fR
+.PP
 Displays all the recently finished jobs submitted by john to the queue 
 short, and executed on the host apple. 
 .PP
-% \fBbjobs 101 102 203 509
-\fR.PP
+% \fBbjobs 101 102 203 509\fR
+.PP
 Display jobs with job_ID 101, 102, 203, and 509. 
 .SH SEE ALSO
 .BR

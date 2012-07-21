@@ -10,8 +10,8 @@
 .PP
 .PP
 \fBlsload\fR [\fB-l\fR] [\fB-N\fR | \fB-E\fR] [\fB-I\fR\fB \fR\fIload_index\fR[\fB:\fR\fIload_index\fR] \fI...\fR] [\fB-n\fR\fB \fR\fInum_hosts\fR] 
-[\fB-R\fR\fB \fR\fIres_req\fR] \fIhost_name\fR\fI ...  ...
-\fR.PP
+[\fB-R\fR\fB \fR\fIres_req\fR] \fIhost_name\fR\fI ...  ...\fR
+.PP
 \fBlsload\fR \fB-s\fR\fB \fR[\fIresource_name\fR\fI ...\fR]
 .PP
 \fBlsload\fR [\fB-h\fR | \fB-V\fR]
@@ -391,33 +391,33 @@ Hosts associated with the instance of the resource.
 .BR
 .PP
 .PP
-% \fBlsload -R "select[r1m<=0.5 && swp>=20 && type==ALPHA]"
-\fR.PP
+% \fBlsload -R "select[r1m<=0.5 && swp>=20 && type==ALPHA]"\fR
+.PP
 OR, in restricted format:
 .PP
-%\fB \fR\fBlsload -R r1m=0.5:swp=20:type=ALPHA
-\fR.PP
+%\fB \fR\fBlsload -R r1m=0.5:swp=20:type=ALPHA\fR
+.PP
 Displays the load of ALPHA hosts with at least 20 megabytes of swap 
 space, and a 1-minute run queue length less than 0.5.
 .PP
-% \fBlsload -R "select[(1-swp/maxswp)<0.75] order[pg]"
-\fR.PP
+% \fBlsload -R "select[(1-swp/maxswp)<0.75] order[pg]"\fR
+.PP
 Displays the load of the hosts whose swap space utilization is less than 
 75%. The resulting hosts are ordered by paging rate.
 .PP
-%\fB \fR\fBlsload -I r1m:ut:io:pg
-\fR.PP
+%\fB \fR\fBlsload -I r1m:ut:io:pg\fR
+.PP
 Displays the 1-minute CPU raw run queue length, the CPU utilization, 
 the disk I/O and paging rates for all hosts in the cluster.
 .PP
-%\fB \fR\fBlsload -E
-\fR.PP
+%\fB \fR\fBlsload -E\fR
+.PP
 Displays the load of all hosts, ordered by r15s:pg\fB,\fR with the CPU run 
 queue lengths being the effective run queue lengths (see 
 lsfintro(1)).
 .PP
-%\fB \fR\fBlsload -s verilog_license
-\fR.PP
+%\fB \fR\fBlsload -s verilog_license\fR
+.PP
 Displays the value and location of all the verilog_license dynamic 
 shared resource instances.
 .SH SEE ALSO

@@ -16,40 +16,40 @@
 .BR
 .PP
 .br
-\fB-B
-\fR.br
-\fB-f
-\fR.br
-\fB-N
-\fR.br
-\fB-x
-\fR.br
-\fB-b\fR\fB \fR\fIbegin_time
-\fR.br
-\fB-C\fR\fB \fR\fIcore_limit
-\fR.br
+\fB-B\fR
+.br
+\fB-f\fR
+.br
+\fB-N\fR
+.br
+\fB-x\fR
+.br
+\fB-b\fR\fB \fR\fIbegin_time\fR
+.br
+\fB-C\fR\fB \fR\fIcore_limit\fR
+.br
 \fB-c\fR [\fIhour\fR\fB:\fR]\fIminute\fR[\fB/\fR\fIhost_name\fR | \fB/\fR\fIhost_model\fR] 
 .br
-\fB-D\fR\fB \fR\fIdata_limit
-\fR.br
-\fB-E "\fR\fIpre_exec_command \fR[\fIargument \fR...]\fB"
-\fR.br
-\fB-F\fR\fB \fR\fIfile_limit
-\fR.br
-\fB-m\fR \fB"\fR\fIhost_name\fR[\fB+\fR[\fIpref_level\fR]] | \fIhost_group\fR[\fB+\fR[\fIpref_level\fR]] ...\fB"
-\fR.br
-\fB-G\fR\fB \fR\fIuser_group
-\fR.br
-\fB-M\fR\fB \fR\fImem_limit
-\fR.br
-\fB-q\fR\fI \fR\fB"\fR\fIqueue_name \fR...\fB"
-\fR.br
-\fB-S\fR\fB \fR\fIstack_limit
-\fR.br
-\fB-t\fR\fB \fR\fIterm_time
-\fR.br
-\fB-w\fR \fB`\fR\fIdependency_expression\fR\fB'
-\fR.br
+\fB-D\fR\fB \fR\fIdata_limit\fR
+.br
+\fB-E "\fR\fIpre_exec_command \fR[\fIargument \fR...]\fB"\fR
+.br
+\fB-F\fR\fB \fR\fIfile_limit\fR
+.br
+\fB-m\fR \fB"\fR\fIhost_name\fR[\fB+\fR[\fIpref_level\fR]] | \fIhost_group\fR[\fB+\fR[\fIpref_level\fR]] ...\fB"\fR
+.br
+\fB-G\fR\fB \fR\fIuser_group\fR
+.br
+\fB-M\fR\fB \fR\fImem_limit\fR
+.br
+\fB-q\fR\fI \fR\fB"\fR\fIqueue_name \fR...\fB"\fR
+.br
+\fB-S\fR\fB \fR\fIstack_limit\fR
+.br
+\fB-t\fR\fB \fR\fIterm_time\fR
+.br
+\fB-w\fR \fB`\fR\fIdependency_expression\fR\fB'\fR
+.br
 \fB-W \fR\fIrun_limit\fR[\fB/\fR\fIhost_name| \fR\fB/\fR\fIhost_model\fR]
 .br
 \fIcheckpoint_dir \fR[\fIjob_ID\fR | \fB"\fR\fIjob_ID\fR\fB[\fR\fIindex\fR\fB]"\fR]
@@ -65,8 +65,8 @@ checkpointed can be restarted.
 .PP
 Jobs are re-submitted and assigned a new job ID. The checkpoint 
 directory is renamed using the new job ID, 
-\fIcheckpoint_dir/new_job_ID/. 
-\fR.PP
+\fIcheckpoint_dir/new_job_ID/. \fR
+.PP
 By default, jobs are restarted with the same output file and file transfer 
 specifications, job name, window signal value, checkpoint directory 
 and period, and rerun options as the original job.

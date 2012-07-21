@@ -39,8 +39,8 @@ corresponding keywords. The valid keywords for this section are:
 .BR
 .PP
 .PP
-\fIdays
-\fR.SS Description
+\fIdays\fR
+.SS Description
 .BR
 .PP
 .PP
@@ -67,8 +67,8 @@ Undefined (no limit to the age of lsb.acct).
 .BR
 .PP
 .PP
-\fIkilobytes
-\fR.SS Description
+\fIkilobytes\fR
+.SS Description
 .BR
 .PP
 .PP
@@ -95,8 +95,8 @@ Undefined (no limit to the size of lsb.acct).
 .BR
 .PP
 .PP
-\fBCLEAN_PERIOD\fR \fB=\fR \fIseconds
-\fR.SS Description
+\fBCLEAN_PERIOD\fR \fB=\fR \fIseconds\fR
+.SS Description
 .BR
 .PP
 .PP
@@ -119,8 +119,8 @@ ago, use the \fBbhist\fR command.
 .BR
 .PP
 .PP
-\fBDEFAULT_HOST_SPEC =\fR \fIhost_name | host_model
-\fR.SS Description
+\fBDEFAULT_HOST_SPEC =\fR \fIhost_name | host_model\fR
+.SS Description
 .BR
 .PP
 .PP
@@ -141,8 +141,8 @@ Undefined
 .BR
 .PP
 .PP
-\fBDEFAULT_PROJECT\fR \fB=\fR \fIproject_name
-\fR.SS Description
+\fBDEFAULT_PROJECT\fR \fB=\fR \fIproject_name\fR
+.SS Description
 .BR
 .PP
 .PP
@@ -192,8 +192,8 @@ queue.
 .BR
 .PP
 .PP
-\fBDISABLE_UACCT_MAP = y | Y
-\fR.SS Description
+\fBDISABLE_UACCT_MAP = y | Y\fR
+.SS Description
 .BR
 .PP
 .PP
@@ -210,8 +210,8 @@ Undefined
 .BR
 .PP
 .PP
-\fBJOB_ACCEPT_INTERVAL =\fR \fIinteger
-\fR.SS Description
+\fBJOB_ACCEPT_INTERVAL =\fR \fIinteger\fR
+.SS Description
 .BR
 .PP
 .PP
@@ -274,15 +274,15 @@ when MAX_USER_PRIORITY is also defined.
 .BR
 .PP
 .PP
-\fIincrement
-\fR.IP
+\fIincrement\fR
+.IP
 Specifies the value used to increase job priority every \fIinterval\fR 
 minutes. Valid values are positive integers.
 
 .RE
 .PP
-\fIinterval
-\fR.IP
+\fIinterval\fR
+.IP
 Specifies the frequency, in minutes, to \fIincrement\fR job priority. 
 Valid values are positive integers.
 
@@ -314,8 +314,8 @@ MAX_USER_PRIORITY
 .BR
 .PP
 .PP
-\fBJOB_SPOOL_DIR =\fR \fIdir
-\fR.SS Description
+\fBJOB_SPOOL_DIR =\fR \fIdir\fR
+.SS Description
 .BR
 .PP
 .PP
@@ -376,8 +376,8 @@ directory instead of %windir% for spooled output.
 .BR
 .PP
 .PP
-\fBJOB_TERMINATE_INTERVAL =\fR \fIseconds
-\fR.SS Description
+\fBJOB_TERMINATE_INTERVAL =\fR \fIseconds\fR
+.SS Description
 .BR
 .PP
 .PP
@@ -400,8 +400,8 @@ signals. This allows the job to clean up if necessary.
 .BR
 .PP
 .PP
-MAX_ACCT_ARCHIVE_FILE=\fIinteger
-\fR.SS Description 
+MAX_ACCT_ARCHIVE_FILE=\fIinteger\fR
+.SS Description 
 .BR
 .PP
 .PP
@@ -437,8 +437,8 @@ Undefined (no deletion of lsb.acct.\fIn\fR files).
 .BR
 .PP
 .PP
-\fBMAX_JOB_ARRAY_SIZE =\fR \fIinteger
-\fR.SS Description
+\fBMAX_JOB_ARRAY_SIZE =\fR \fIinteger\fR
+.SS Description
 .BR
 .PP
 .PP
@@ -464,8 +464,8 @@ Specify an integer value from 1 to 65534.
 .BR
 .PP
 .PP
-\fBMAX_JOBID=\fR\fIinteger
-\fR.SS Description
+\fBMAX_JOBID=\fR\fIinteger\fR
+.SS Description
 .BR
 .PP
 .PP
@@ -491,8 +491,8 @@ MAX_JOBID=1234567
 .BR
 .PP
 .PP
-\fBMAX_JOB_NUM\fR \fB=\fR \fIinteger
-\fR.SS Description
+\fBMAX_JOB_NUM\fR \fB=\fR \fIinteger\fR
+.SS Description
 .BR
 .PP
 .PP
@@ -515,8 +515,8 @@ Event logging continues in the new lsb.events file.
 .BR
 .PP
 .PP
-\fBMAX_SBD_FAIL = \fR\fIinteger
-\fR.SS Description
+\fBMAX_SBD_FAIL = \fR\fIinteger\fR
+.SS Description
 .BR
 .PP
 .PP
@@ -541,8 +541,8 @@ scheduled to be rerun on another host.
 .BR
 .PP
 .PP
-\fBMAX_SBD_CONNS = \fR\fIinteger
-\fR.SS Description
+\fBMAX_SBD_CONNS = \fR\fIinteger\fR
+.SS Description
 .BR
 .PP
 .PP
@@ -555,8 +555,8 @@ to sbatchd
 .BR
 .PP
 .PP
-\fBMAX_SCHED_STAY = \fR\fIinteger
-\fR.SS Description
+\fBMAX_SCHED_STAY = \fR\fIinteger\fR
+.SS Description
 .BR
 .PP
 .PP
@@ -573,8 +573,8 @@ The time in seconds the mbatchd has for scheduling pass.
 .BR
 .PP
 .PP
-\fBMAX_USER_PRIORITY=\fR\fIinteger
-\fR.SS Description
+\fBMAX_USER_PRIORITY=\fR\fIinteger\fR
+.SS Description
 .BR
 .PP
 .PP
@@ -616,8 +616,8 @@ bsub, bmod, btop, bbot, JOB_PRIORITY_OVER_TIME
 .BR
 .PP
 .PP
-\fBMBD_SLEEP_TIME =\fR \fIseconds
-\fR.SS Description
+\fBMBD_SLEEP_TIME =\fR \fIseconds\fR
+.SS Description
 .BR
 .PP
 .PP
@@ -635,8 +635,8 @@ jobs.
 .BR
 .PP
 .PP
-\fBPG_SUSP_IT =\fR \fIseconds
-\fR.SS Description
+\fBPG_SUSP_IT =\fR \fIseconds\fR
+.SS Description
 .BR
 .PP
 .PP
@@ -661,8 +661,8 @@ this parameter may be set to 0.
 .BR
 .PP
 .PP
-\fBSBD_SLEEP_TIME =\fR \fIseconds
-\fR.SS Description
+\fBSBD_SLEEP_TIME =\fR \fIseconds\fR
+.SS Description
 .BR
 .PP
 .PP
@@ -680,8 +680,8 @@ decide whether jobs on the host must be suspended or resumed.
 .BR
 .PP
 .PP
-\fBSHARED_RESOURCE_UPDATE_FACTOR = \fR\fIinteger
-\fR.SS Description
+\fBSHARED_RESOURCE_UPDATE_FACTOR = \fR\fIinteger\fR
+.SS Description
 .BR
 .PP
 .PP

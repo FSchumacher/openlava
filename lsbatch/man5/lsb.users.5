@@ -95,13 +95,13 @@ User groups may be defined recursively but must not create a loop.
 .BR
 .PP
 .PP
-\fB(\fR\fIuser_name\fR | \fIuser_group\fR ...\fB)\fR | \fB(all)\fR | \fB(!)
-\fR.PP
+\fB(\fR\fIuser_name\fR | \fIuser_group\fR ...\fB)\fR | \fB(all)\fR | \fB(!)\fR
+.PP
 Specify the following, all enclosed in parentheses:
 .RS
 .HP 2
-\(bu \fIuser_name\fR | \fIuser_group 
-\fR.RE
+\(bu \fIuser_name\fR | \fIuser_group \fR
+.RE
 
 .IP
 User and user group names, separated by spaces. User names must 
@@ -114,8 +114,8 @@ this section, or LINUX groups.
 
 .RS
 .HP 2
-\(bu \fBall
-\fR.RE
+\(bu \fBall\fR
+.RE
 
 .IP
 The reserved name all specifies all users in the cluster. 
@@ -123,8 +123,8 @@ The reserved name all specifies all users in the cluster.
 
 .RS
 .HP 2
-\(bu \fB!
-\fR.RE
+\(bu \fB!\fR
+.RE
 
 .IP
 The exclamation mark ! specifies that the group membership 
