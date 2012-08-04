@@ -3329,7 +3329,7 @@ runQPost(struct jobCard *jp)
     }
 
     if (!jp->jobSpecs.postCmd || jp->jobSpecs.postCmd[0] == '\0')
-        return;
+        return 0;
 
     if (jp->jobSpecs.preCmd && jp->jobSpecs.preCmd[0] != '\0') {
 
